@@ -1,0 +1,449 @@
+object calcform: Tcalcform
+  Left = 347
+  Top = 186
+  BorderIcons = []
+  BorderStyle = bsSingle
+  Caption = #1082#1072#1083#1100#1082#1091#1083#1103#1090#1086#1088
+  ClientHeight = 135
+  ClientWidth = 120
+  Color = clGray
+  Ctl3D = False
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Shape17: TShape
+    Left = 1
+    Top = 3
+    Width = 118
+    Height = 131
+    Brush.Style = bsClear
+  end
+  object Shape8: TShape
+    Left = 60
+    Top = 71
+    Width = 25
+    Height = 17
+    Brush.Style = bsClear
+  end
+  object Shape7: TShape
+    Left = 33
+    Top = 71
+    Width = 25
+    Height = 17
+    Brush.Style = bsClear
+  end
+  object Shape6: TShape
+    Left = 6
+    Top = 71
+    Width = 25
+    Height = 17
+    Brush.Style = bsClear
+  end
+  object Shape5: TShape
+    Left = 60
+    Top = 111
+    Width = 25
+    Height = 17
+    Brush.Style = bsClear
+  end
+  object Shape4: TShape
+    Left = 6
+    Top = 111
+    Width = 52
+    Height = 17
+    Brush.Style = bsClear
+  end
+  object Shape3: TShape
+    Left = 60
+    Top = 91
+    Width = 25
+    Height = 17
+    Brush.Style = bsClear
+  end
+  object Shape1: TShape
+    Left = 33
+    Top = 91
+    Width = 25
+    Height = 17
+    Brush.Style = bsClear
+  end
+  object Shape2: TShape
+    Left = 6
+    Top = 91
+    Width = 25
+    Height = 17
+    Brush.Style = bsClear
+  end
+  object b1: TSpeedButton
+    Left = 7
+    Top = 92
+    Width = 23
+    Height = 15
+    Caption = '1'
+    Flat = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'System'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = b1Click
+  end
+  object b2: TSpeedButton
+    Left = 34
+    Top = 92
+    Width = 23
+    Height = 15
+    Caption = '2'
+    Flat = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'System'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = b1Click
+  end
+  object b3: TSpeedButton
+    Left = 61
+    Top = 92
+    Width = 23
+    Height = 15
+    Caption = '3'
+    Flat = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'System'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = b1Click
+  end
+  object b0: TSpeedButton
+    Left = 7
+    Top = 112
+    Width = 50
+    Height = 15
+    Caption = '0'
+    Flat = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'System'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = b1Click
+  end
+  object bt: TSpeedButton
+    Left = 61
+    Top = 112
+    Width = 23
+    Height = 15
+    Caption = '.'
+    Flat = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'System'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = b1Click
+  end
+  object b4: TSpeedButton
+    Left = 7
+    Top = 72
+    Width = 23
+    Height = 15
+    Caption = '4'
+    Flat = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'System'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = b1Click
+  end
+  object display: TLabel
+    Left = 4
+    Top = 9
+    Width = 112
+    Height = 17
+    Alignment = taRightJustify
+    AutoSize = False
+    Color = clBlack
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clLime
+    Font.Height = -13
+    Font.Name = 'System'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object b5: TSpeedButton
+    Left = 34
+    Top = 72
+    Width = 23
+    Height = 15
+    Caption = '5'
+    Flat = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'System'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = b1Click
+  end
+  object b6: TSpeedButton
+    Left = 61
+    Top = 72
+    Width = 23
+    Height = 15
+    Caption = '6'
+    Flat = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'System'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = b1Click
+  end
+  object Shape9: TShape
+    Left = 6
+    Top = 51
+    Width = 25
+    Height = 17
+    Brush.Style = bsClear
+  end
+  object b7: TSpeedButton
+    Left = 7
+    Top = 52
+    Width = 23
+    Height = 15
+    Caption = '7'
+    Flat = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'System'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = b1Click
+  end
+  object Shape10: TShape
+    Left = 33
+    Top = 51
+    Width = 25
+    Height = 17
+    Brush.Style = bsClear
+  end
+  object Shape11: TShape
+    Left = 60
+    Top = 51
+    Width = 25
+    Height = 17
+    Brush.Style = bsClear
+  end
+  object b8: TSpeedButton
+    Left = 34
+    Top = 52
+    Width = 23
+    Height = 15
+    Caption = '8'
+    Flat = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'System'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = b1Click
+  end
+  object b9: TSpeedButton
+    Left = 61
+    Top = 52
+    Width = 23
+    Height = 15
+    Caption = '9'
+    Flat = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'System'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = b1Click
+  end
+  object Shape12: TShape
+    Left = 88
+    Top = 70
+    Width = 25
+    Height = 29
+    Brush.Style = bsClear
+  end
+  object bravno: TSpeedButton
+    Left = 89
+    Top = 71
+    Width = 23
+    Height = 27
+    Caption = '='
+    Flat = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = bravnoClick
+  end
+  object plusshape: TShape
+    Left = 88
+    Top = 51
+    Width = 25
+    Height = 16
+    Brush.Style = bsClear
+  end
+  object bplus: TSpeedButton
+    Left = 89
+    Top = 52
+    Width = 23
+    Height = 14
+    Caption = '+'
+    Flat = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'System'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = bplusClick
+  end
+  object Shape13: TShape
+    Left = 88
+    Top = 31
+    Width = 25
+    Height = 17
+    Brush.Style = bsClear
+  end
+  object bminus: TSpeedButton
+    Left = 89
+    Top = 32
+    Width = 23
+    Height = 15
+    Caption = '-'
+    Flat = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = bplusClick
+  end
+  object Shape14: TShape
+    Left = 60
+    Top = 31
+    Width = 25
+    Height = 17
+    Brush.Style = bsClear
+  end
+  object Shape15: TShape
+    Left = 33
+    Top = 31
+    Width = 25
+    Height = 17
+    Brush.Style = bsClear
+  end
+  object bumn: TSpeedButton
+    Left = 61
+    Top = 32
+    Width = 23
+    Height = 15
+    Caption = '*'
+    Flat = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = bplusClick
+  end
+  object bdel: TSpeedButton
+    Left = 34
+    Top = 32
+    Width = 23
+    Height = 15
+    Caption = '/'
+    Flat = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'System'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = bplusClick
+  end
+  object Shape16: TShape
+    Left = 6
+    Top = 31
+    Width = 25
+    Height = 17
+    Brush.Style = bsClear
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 7
+    Top = 32
+    Width = 23
+    Height = 15
+    Caption = 'C'
+    Flat = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'System'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = SpeedButton1Click
+  end
+  object Shape18: TShape
+    Left = 88
+    Top = 102
+    Width = 25
+    Height = 26
+    Brush.Style = bsClear
+  end
+  object bend: TSpeedButton
+    Left = 89
+    Top = 103
+    Width = 23
+    Height = 24
+    Caption = 'ok'
+    Flat = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'System'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = bendClick
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 200
+    OnTimer = Timer1Timer
+    Left = 72
+  end
+end

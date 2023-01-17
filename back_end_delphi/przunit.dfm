@@ -1,0 +1,135 @@
+object przform: Tprzform
+  Left = 413
+  Top = 172
+  AlphaBlendValue = 4
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = #1057#1087#1080#1089#1086#1082' '#1055#1088#1086#1080#1079#1074#1086#1076#1080#1090#1077#1083#1077#1081' '#1058#1086#1074#1072#1088#1072
+  ClientHeight = 480
+  ClientWidth = 448
+  Color = clWindow
+  Ctl3D = False
+  Font.Charset = RUSSIAN_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  Icon.Data = {
+    0000010001002020100000000000E80200001600000028000000200000004000
+    0000010004000000000080020000000000000000000000000000000000000000
+    000000008000008000000080800080000000800080008080000080808000C0C0
+    C0000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF006666
+    6666666666666666666666666666666666666666666666666666666666660000
+    00000000000000000000000000000000000000000000000000000000000000FF
+    FFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FF
+    0000FF0000FF0000FF000000FF0000FF0000FF0000FF0000FF000000FF0000FF
+    FFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FF
+    0000FF0000FF0000FF000000FF0000FF0000FF0000FF0000FF000000FF0000FF
+    FFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FF
+    0000FF0000FF0000FF000000FF0000FF0000FF0000FF0000FF000000FF0000FF
+    FFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FF
+    0000FF0000FF0000FF000000FF0000FF0000FF0000FF0000FF000000FF0000FF
+    FFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFF0000CC
+    CCCCCCCCCCCCCCCCCCCCCCCCCC0000CCCCCCCCCCCCCCCCCCCCCCCCCCCC000088
+    88CCCCCCCCCCCCCCCCCCCC888800008888CCCCCCCCCCCCCCCCCCCC8888000000
+    0000000000000000000000000000000000000000000000000000000000006666
+    6666666666666666666666666666666666666666666666666666666666666666
+    6666666666666666666666666666666666666666666666666666666666660000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000000000000000000000000000000000000000000000}
+  OldCreateOrder = False
+  Position = poDefault
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 65
+    Width = 448
+    Height = 392
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 0
+    object DBGrid1: TDBGrid
+      Left = 0
+      Top = 0
+      Width = 448
+      Height = 392
+      Align = alClient
+      DataSource = DM.przwds
+      ReadOnly = True
+      TabOrder = 0
+      TitleFont.Charset = RUSSIAN_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+      OnDblClick = DBGrid1DblClick
+      OnKeyDown = DBGrid1KeyDown
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 0
+    Width = 448
+    Height = 65
+    Align = alTop
+    BevelOuter = bvSpace
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 8
+      Top = 8
+      Width = 294
+      Height = 14
+      Caption = #1045#1089#1083#1080' '#1091' '#1090#1086#1074#1072#1088#1072' '#1085#1072#1087#1077#1095#1072#1090#1072#1085' '#1082#1086#1076' - '#1089#1082#1072#1085#1080#1088#1091#1081#1090#1077' '#1077#1075#1086
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clRed
+      Font.Height = -12
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object OracleNavigator1: TOracleNavigator
+      Left = 8
+      Top = 32
+      Width = 280
+      Height = 25
+      DataSource = DM.przwds
+      VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbInsert, nbDelete, nbEdit, nbPost, nbCancel, nbRefresh]
+      TabOrder = 0
+      OnClick = OracleNavigator1Click
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Top = 457
+    Width = 448
+    Height = 23
+    Align = alBottom
+    BevelOuter = bvNone
+    TabOrder = 2
+    object Label2: TLabel
+      Left = 3
+      Top = 3
+      Width = 98
+      Height = 13
+      Caption = #1055#1086#1080#1089#1082' '#1087#1086' '#1085#1072#1079#1074#1072#1085#1080#1102
+    end
+    object nameedit: TEdit
+      Left = 104
+      Top = 2
+      Width = 169
+      Height = 19
+      TabOrder = 0
+      OnChange = nameeditChange
+      OnKeyDown = DBGrid1KeyDown
+      OnKeyPress = nameeditKeyPress
+    end
+  end
+end

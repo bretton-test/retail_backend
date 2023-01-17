@@ -1,0 +1,240 @@
+object rfindform: Trfindform
+  Left = 269
+  Top = 140
+  Width = 696
+  Height = 480
+  Caption = #1087#1086#1080#1089#1082' '#1087#1086' '#1088#1072#1089#1093#1086#1076#1091
+  Color = clWindow
+  Ctl3D = False
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  FormStyle = fsMDIChild
+  Icon.Data = {
+    0000010001002020100000000000E80200001600000028000000200000004000
+    0000010004000000000080020000000000000000000000000000000000000000
+    000000008000008000000080800080000000800080008080000080808000C0C0
+    C0000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF006666
+    6666666666666666666666666666666666666666666666666666666666666666
+    6666666666666666666666666666666666666666666666666666666666666666
+    6666666666666666666666666666600000000006666666666000000000066000
+    0000000666666666600000000006600FF000000666666666600FF0000006600F
+    F000000666666666600FF0000006600FF000000666666666600FF0000006600F
+    F000000666666666600FF0000006600000000000000660000000000000066000
+    000000000006600000000000000660000FF000000000000FF000000000066000
+    0FF000000000000FF0000000000660000FF000000660000FF000000000066000
+    0FF000000660000FF0000000000660000FF000000660000FF000000000066000
+    0FF000000660000FF00000000006666000000000000000000000000006666660
+    00000000000000000000000006666666600FF0000006600FF000000666666666
+    600FF0000006600FF00000066666666660000000000660000000000666666666
+    6000000000066000000000066666666666600000066666600000066666666666
+    6660000006666660000006666666666666600FF0066666600FF0066666666666
+    66600FF0066666600FF006666666666666600000066666600000066666666666
+    6660000006666660000006666666666666666666666666666666666666660000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000000000000000000000000000000000000000000000}
+  OldCreateOrder = False
+  Position = poDefault
+  Visible = True
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 424
+    Width = 688
+    Height = 29
+    Align = alBottom
+    BevelOuter = bvNone
+    TabOrder = 0
+    object NameEdit: TEdit
+      Left = 8
+      Top = 6
+      Width = 153
+      Height = 20
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      OnChange = NameEditChange
+      OnKeyDown = NameEditKeyDown
+      OnKeyPress = NameEditKeyPress
+    end
+    object BitBtn2: TBitBtn
+      Left = 174
+      Top = 5
+      Width = 40
+      Height = 21
+      TabOrder = 1
+      OnClick = BitBtn2Click
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000120B0000120B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        3333333333333333333333333333333333333333333333333333333333333333
+        3333333333333FF3333333333333003333333333333F77F33333333333009033
+        333333333F7737F333333333009990333333333F773337FFFFFF330099999000
+        00003F773333377777770099999999999990773FF33333FFFFF7330099999000
+        000033773FF33777777733330099903333333333773FF7F33333333333009033
+        33333333337737F3333333333333003333333333333377333333333333333333
+        3333333333333333333333333333333333333333333333333333333333333333
+        3333333333333333333333333333333333333333333333333333}
+      Layout = blGlyphTop
+      NumGlyphs = 2
+    end
+    object BitBtn3: TBitBtn
+      Left = 214
+      Top = 5
+      Width = 39
+      Height = 21
+      TabOrder = 2
+      OnClick = BitBtn3Click
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000120B0000120B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        3333333333333333333333333333333333333333333333333333333333333333
+        3333333333333333333333333333333333333333333FF3333333333333003333
+        3333333333773FF3333333333309003333333333337F773FF333333333099900
+        33333FFFFF7F33773FF30000000999990033777777733333773F099999999999
+        99007FFFFFFF33333F7700000009999900337777777F333F7733333333099900
+        33333333337F3F77333333333309003333333333337F77333333333333003333
+        3333333333773333333333333333333333333333333333333333333333333333
+        3333333333333333333333333333333333333333333333333333}
+      Layout = blGlyphTop
+      NumGlyphs = 2
+    end
+  end
+  object DBGridEh1: TDBGridEh
+    Left = 0
+    Top = 0
+    Width = 688
+    Height = 424
+    Align = alClient
+    AutoFitColWidths = True
+    DataSource = DataSource1
+    Flat = True
+    FooterColor = clWindow
+    FooterFont.Charset = DEFAULT_CHARSET
+    FooterFont.Color = clWindowText
+    FooterFont.Height = -11
+    FooterFont.Name = 'MS Sans Serif'
+    FooterFont.Style = []
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+  end
+  object Query: TOracleDataSet
+    SQL.Strings = (
+      'select'
+      #39#1088#1072#1089#1093#1086#1076#1085'.'#1085#1072#1082#1083'.'#39' '#1090#1080#1087'_'#1076#1086#1082','
+      ' n.nn '#1053#1086#1084#1077#1088'_'#1044#1086#1082','
+      'j.reg '#1087#1088#1086#1074#1077#1076#1077#1085#1072','
+      'n.plu '#1050#1086#1076','
+      'n.name '#1058#1086#1074#1072#1088','
+      'n.data '#1044#1072#1090#1072','
+      'n.ed_izm '#1077#1076'_'#1080#1079#1084','
+      'n.kol_vo '#1082#1086#1083'_'#1074#1086','
+      'n.cenasnds '#1094#1077#1085#1072'_'#1088#1077#1072#1083','
+      'j.pokup_name '#1087#1086#1082#1091#1087#1072#1090#1077#1083#1100','
+      'j.nom'
+      'from '
+      'tmp.trashnakl n,tmp.trashj j'
+      'where n.nom=j.nom'
+      'and upper(name)  like upper('#39'%'#39'||:tovar||'#39'%'#39')'
+      '--and to_char(n.nn) like :nn'
+      'union all'
+      ''
+      'select'
+      #39#1082#1072#1089#1089#1072#39' '#1090#1080#1087'_'#1076#1086#1082','
+      'j.doc '#1053#1086#1084#1077#1088'_'#1044#1086#1082','
+      'j.reg '#1087#1088#1086#1074#1077#1076#1077#1085#1072','
+      'n.plu '#1050#1086#1076','
+      'n.name '#1058#1086#1074#1072#1088','
+      'j.data '#1044#1072#1090#1072','
+      'n.ed_izm '#1077#1076'_'#1080#1079#1084','
+      'n.kolvo '#1082#1086#1083'_'#1074#1086','
+      'n.price '#1094#1077#1085#1072'_'#1088#1077#1072#1083','
+      'k.name '#1087#1086#1082#1091#1087#1072#1090#1077#1083#1100','
+      'j.doc'
+      'from '
+      'tmp.kkmreport n,tmp.kkmj j,tmp.kkm k'
+      'where n.doc=j.doc and j.kkm=k.id'
+      'and upper(n.name)  like upper('#39'%'#39'||:tovar||'#39'%'#39')'
+      '--and to_char(n.nn) like :nn'
+      'union all'
+      ''
+      'select'
+      #39#1089#1087#1080#1089#1072#1085#1080#1077#39' '#1090#1080#1087'_'#1076#1086#1082','
+      'j.nom '#1053#1086#1084#1077#1088'_'#1044#1086#1082','
+      'j.reg '#1087#1088#1086#1074#1077#1076#1077#1085#1072','
+      'n.plu '#1050#1086#1076','
+      't.name '#1058#1086#1074#1072#1088','
+      'j.data '#1044#1072#1090#1072','
+      't.ed_izm '#1077#1076'_'#1080#1079#1084','
+      'n.kol_fakt '#1082#1086#1083'_'#1074#1086','
+      'n.price '#1094#1077#1085#1072'_'#1088#1077#1072#1083','
+      #39'-'#39' '#1087#1086#1082#1091#1087#1072#1090#1077#1083#1100','
+      'j.nom'
+      'from '
+      'tmp.tinvent n,tmp.tskladj j,tmp.tkatalog t'
+      'where n.nom=j.nom and t.plu=n.plu and j.tip=2'
+      'and upper(t.name)  like upper('#39'%'#39'||:tovar||'#39'%'#39')'
+      '--and to_char(n.nn) like :nn'
+      ''
+      ''
+      ''
+      'order by '#1090#1080#1087'_'#1076#1086#1082','#1044#1072#1090#1072','#1058#1086#1074#1072#1088)
+    ReadBuffer = 25
+    Optimize = True
+    Debug = False
+    Variables.Data = {
+      0300000001000000060000003A544F5641520500000005000000EBE8F1F20000
+      000000}
+    StringFieldsOnly = False
+    SequenceField.ApplyMoment = amOnPost
+    OracleDictionary.EnforceConstraints = False
+    OracleDictionary.UseMessageTable = False
+    OracleDictionary.DefaultValues = False
+    OracleDictionary.DynamicDefaults = False
+    OracleDictionary.FieldKinds = False
+    OracleDictionary.DisplayFormats = False
+    OracleDictionary.RangeValues = False
+    OracleDictionary.RequiredFields = True
+    QBEDefinition.SaveQBEValues = True
+    QBEDefinition.AllowFileWildCards = True
+    QBEDefinition.QBEFontColor = clNone
+    QBEDefinition.QBEBackgroundColor = clNone
+    Cursor = crDefault
+    ReadOnly = False
+    LockingMode = lmCheckImmediate
+    QueryAllRecords = True
+    CountAllRecords = False
+    RefreshOptions = []
+    CommitOnPost = True
+    CachedUpdates = False
+    QBEMode = False
+    Session = DM.OraBase
+    DesignActivation = False
+    Active = False
+    Left = 192
+    Top = 72
+  end
+  object DataSource1: TDataSource
+    DataSet = Query
+    Left = 288
+    Top = 88
+  end
+end

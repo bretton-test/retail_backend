@@ -1,0 +1,2 @@
+маленький;3;\reports\SmalCennikUser.frf;
+большой;3;\reports\BigCennikUser.frf;

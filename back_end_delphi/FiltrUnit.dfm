@@ -1,0 +1,42 @@
+object Filtrform: TFiltrform
+  Left = 510
+  Top = 244
+  Align = alClient
+  BorderStyle = bsNone
+  Caption = 'Filtrform'
+  ClientHeight = 29
+  ClientWidth = 248
+  Color = clWindow
+  TransparentColorValue = clFuchsia
+  Ctl3D = False
+  ParentFont = True
+  FormStyle = fsStayOnTop
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Edit1: TEdit
+    Left = 0
+    Top = 0
+    Width = 177
+    Height = 19
+    BorderStyle = bsNone
+    Color = clYellow
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 4000
+    OnTimer = Timer1Timer
+    Left = 56
+    Top = 8
+  end
+end
